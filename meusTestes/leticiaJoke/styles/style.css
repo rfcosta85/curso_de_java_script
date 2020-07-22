@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media only screen and (min-width: 769px)
+{
+
+    header
+    {
+        background-color: black;
+        padding: 2%;
+        margin-left: -8%;
+        margin-right: -8%;
+        margin-top: -2%;
+    }
+
+    h1
+    {
+        color: white;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    body
+    {
+        background-image: url('/curso_de_javascript/curso_de_java_script/meusTestes/leticiaJoke/img/superNatural.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }    
+
+}
