@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+
+       img
+       {
+           height: 120px;
+           margin-top: 2%;
+       }
+
+        body 
+        {
+            
+            font-size: 1.2em;
+            margin-left: 1%;
+            text-align: center;
+            color: white;
+            
+            
+        }
+
+        h1 
+        {
+            font-size: 2em;
+            text-align: center;
+            color: black;
+            margin-top: 1%;
+        }
+
+        h2 
+        {
+            padding-top: 3%;
+            padding-left: 5%;
+        }
+
+        div#body 
+        {
+            
+            background-color: rgba(16, 16, 88, 0.904);
+            height: 200px;
+            margin-top: 1%;
+            margin-left: -14px;
+            margin-right: -8px;
+            
+        }
+
+        span
+        {
+            margin-left: 2%;
+        }
+
+        input#pais 
+        {
+            height: 12%;
+            margin-right: 0.5%;
+            margin-left: 0.5%;
+        }
+
+        div#resultado
+        {
+            color: black;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+        }
+
+    </style>
+</head>
+
+<header>
+    <img src="../aula11/infraeroLogo.jpg" alt="Logo Infraero">
+</header>
+<body>
+    
+    <h1>Controle de Fronteiras</h1>
+
+    <div id="body">
+
+        <h2>Bem vindo ao aeroporto internacional Tom Jobim</h2>
+        <span>Por favor informe o seu país de nascimento: </span> <input type="text" name="pais" id="pais">
+        <input type="button" value="ok" onclick="verificar()">
+
+    </div>
+
+    <div id="resultado">
+        
+    </div>
+    
+    <script>
+
+        function verificar()
+        {
+
+            var verificador = window.document.querySelector('input#pais')
+            var resultado = window.document.querySelector('div#resultado')
+            var nacionalidade = verificador
+            var pais = (verificador.value)            
+            if(pais == 'Brasil')
+            {
+               resultado.innerHTML += `<p>País: <strong> ${pais} </strong> - Por favor dirija-se ao portão 1!</p> ` 
+            }else
+            {
+                resultado.innerHTML = `<p>Country <strong> ${pais} </strong> - Please go to the Gate 2!</p> `
+            }
+            
+        }
+
+    </script>
+
+
+</body>
+</html>
