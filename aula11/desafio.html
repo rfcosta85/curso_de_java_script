@@ -50,7 +50,7 @@
 
         span
         {
-            margin-left: 2%;
+            margin-left: 19%;
         }
 
         input#pais 
@@ -62,10 +62,12 @@
 
         div#resultado
         {
+           
             color: black;
             font-size: 1.5em;
             font-weight: bold;
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+            
         }
 
     </style>
@@ -81,7 +83,7 @@
     <div id="body">
 
         <h2>Bem vindo ao aeroporto internacional Tom Jobim</h2>
-        <span>Por favor informe o seu país de nascimento: </span> <input type="text" name="pais" id="pais">
+        <span>Por favor informe o seu país de nascimento / Please Chose Your Country: </span> <input type="text" name="pais" id="pais">
         <input type="button" value="ok" onclick="verificar()">
 
     </div>
@@ -104,7 +106,7 @@
                resultado.innerHTML += `<p>País: <strong> ${pais} </strong> - Por favor dirija-se ao portão 1!</p> ` 
             }else
             {
-                resultado.innerHTML = `<p>Country <strong> ${pais} </strong> - Please go to the Gate 2!</p> `
+                resultado.innerHTML = `<p>Country: <strong> ${pais} </strong> - Please go to the Gate 2!</p> `
             }
             
         }
