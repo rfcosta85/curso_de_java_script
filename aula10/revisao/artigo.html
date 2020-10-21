@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        body
+        {
+
+            background-color: lightgray;
+            font: bold 25px arial;
+            text-align: center;
+            padding-top: 20%;
+
+        }
+
+        h1
+        {
+
+            text-align: center;
+
+        }
+
+        div#mensagem 
+        {
+
+            height: 60px;
+            width: 35%;
+            background-color: whitesmoke;
+            margin: auto;
+            padding-left: 30%;
+            padding-top: 1%;            
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div id="area">
+
+        Quer saber o que ocorre aqui? Então clique! Ou passe com o cursor do mouse!
+
+    </div>
+     
+
+    <script>
+
+        var areaEvent = window.document.getElementById('area')
+        areaEvent.addEventListener('click', clicar)
+        areaEvent.addEventListener('mouseenter', entrou)
+        areaEvent.addEventListener('mouseout', saiu)
+
+        function clicar()
+        {
+
+            
+            area.innerText = "Parabéns por clicar! RS! = P"    
+            areaEvent.style.background = 'brown'
+
+        }
+
+        function entrou()
+        {
+
+             area.innerText = " Mouse interaction! - Hello! Human!"
+             areaEvent.style.background = 'green'
+
+        }
+
+        function saiu()
+        {
+
+            area.innerText = "Mas já vai embora!???"
+            areaEvent.style.background = 'red'
+
+        }
+        
+    </script>
+    
+    
+</body>
+</html>
