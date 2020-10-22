@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleições 2020</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+        body 
+        {
+
+            background-color: rgba(78, 177, 144, 0.363);
+            text-align: center;
+            font: normal 25px Arial;
+
+        }
+
+        p#title 
+        {
+
+            font-size: 60px;
+            font-family: 'Lobster', cursive;
+            color: rgb(131, 82, 36);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
+            text-align: center;
+
+        }
+
+        p#texto
+        {
+
+            color: rgb(73, 73, 73);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
+            font-weight: bolder;
+            padding-top: 5%;
+
+        }
+
+        p#verifica_idade
+        {
+
+            text-align: left;
+            padding-left: 3%;
+            padding-top: 10%;
+            color: rgb(73, 73, 73);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
+            font-size: 20px;
+
+        }
+
+        div
+        {
+
+            background-color: white;
+            width: 40%;
+            height: 480px;
+            margin: auto;            
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.11);            
+
+        }
+
+        div#resultado
+        {
+
+            background-color: white;
+            width: 80%;
+            height: 80px;
+            margin: auto;
+            margin-top: 10%;            
+            
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <p id="title">Eleições 2020</p>
+
+    <div>
+
+        <p id="texto">Saiba aqui se você tem direito ao voto</p>
+
+        <p id="verifica_idade">Insira a sua idade: <input type="number" id="age"> <input type="button" value="Verificar" onclick="validar()"></p> 
+
+        <div id="resultado">
+
+
+        </div>
+        
+
+    </div>
+
+    
+    
+    <script>
+
+        
+
+        function validar()
+        {
+
+            var idade = window.document.getElementById('age')                   
+            var resultado = window.document.querySelector('div#resultado')
+            var transforma = Number(idade.value)            
+
+            if(transforma >= 16)
+            {
+
+                resultado.innerHTML = `Você tem ${transforma} anos de idade e está apto a votar`
+
+            }else
+            {
+
+                resultado.innerHTML = `Você tem ${transforma} anos de idade e não está apto a votar`
+
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>
