@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+body
+{
+
+    margin: 0;
+    padding: 0;
+    background-color: rgba(236, 12, 12, 0.863);
+
+}
+
+.phrases, header 
+{
+
+    margin: auto;    
+
+}
+
+.phrases
+{
+
+    width: 50%;
+    height: 500px;
+    background-color: whitesmoke;
+
+}
+
+.list
+{
+
+    padding-left: 20%;
+    font-size: 18px;
+
+}
+
+h1,h2,p
+{
+
+    text-align: center;
+    padding-top: 1%;
+
+}
+
+ header
+{
+
+    color: whitesmoke;
+
+}
+
+p, h2 
+{
+
+    padding-top: 3%;
+
+}
+
+p
+{
+
+    font-size: 18px;
+
+}

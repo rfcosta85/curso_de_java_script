@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header><h1>Escolha Premiada</h1></header>
+
+    <div class="phrases">
+
+        <h2>Parabéns você foi sorteado e agora terá o direito de escolher o celular que desejar!</h2>
+
+        <p>Escolha o fabricante que desejar e descubra qual modelo você levará para casa</p>
+
+        <ol class="list">
+
+            <li>Samsung</li> 
+            <li>Apple</li>
+            <li>Xiaomi</li>
+
+        </ol>
+
+       <p>Digite aqui a sua escolha:  <input type="number" name="escolha" id="escolha"> <input type="button" value="Enviar" onclick="apresentar()"></p> 
+
+       <div id="resultado"></div>
+
+    </div>
+
+    <script>
+
+        function apresentar()
+        {
+
+            var escolha = window.document.querySelector('input#escolha')
+            var resultado = window.document.querySelector('div#resultado')
+            var select = Number(escolha.value)
+            switch(select)
+            {
+
+                case 1: 
+
+                    resultado.innerHTML = `<p><strong> Parabéns! Você ganhou o Celular: Samsung Galaxy S20 32GB </strong></p>`                     
+                    break
+
+                case 2: 
+
+                    resultado.innerHTML = `<p><strong> Parabéns! Você ganhou o Celular: iPhone 12 64GB </strong></p>`
+                    break
+
+                case 3:
+
+                    resultado.innerHTML = `<p><strong> Parabéns! Você ganhou o Celular: Xiaomi Redmi 9 128GB </strong></p>`
+                    break
+
+                default:
+
+                    resultado.innerHTML = `<p>Opção <strong>Inválida!</strong> Por favor escolha uma opção <strong>válida!</strong></p>`
+                    break    
+
+            }
+            
+
+        }
+        
+
+    </script>
+    
+</body>
+</html>
