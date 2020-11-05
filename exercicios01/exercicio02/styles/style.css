@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@media only screen and (min-width: 769px)
+{
+    body 
+    {
+        background-color: rgba(37, 91, 122, 0.966);        
+        font: normal 15pt arial;
+    }
+
+    header 
+    {
+        margin-top: 7%;
+    }
+
+    h1
+    {
+        text-align: center;
+        color: white;
+        
+    }
+
+    section 
+    {
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    }
+
+    div
+    {
+        text-align: center;
+    }
+
+    footer > p
+    {
+        text-align: center;
+        color: white;
+        font-style: italic;
+    }
+
+    img
+    {
+        
+        margin-top: 10%;
+        
+    }
+}
