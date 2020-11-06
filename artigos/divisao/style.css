@@ -46,7 +46,7 @@ header
 
 }
 
-#painel
+section
 {
 
     margin: auto;
@@ -54,6 +54,21 @@ header
     width: 50%;
     height: 250px; 
     background-color: rgba(128, 128, 128, 0.26);   
+
+}
+
+#resultado
+{
+
+    font-size: 20px;
+    margin: auto;
+    margin-top: 2%;
+    background-color: white;
+    width: 40%;
+    height: 40px;
+    text-align: center;
+    padding-top: 2%;
+    font-weight: bolder;
 
 }
 
@@ -68,4 +83,36 @@ header
 
 }
 
+#button
+{
 
+    margin-left: 40%;
+    margin-top: 3%;
+    height: 50px;
+    width: 120px;
+    font-size: 18px;
+
+}
+
+#button:hover
+{
+
+    color: brown;    
+
+}
+
+#text_number1, #text_number2
+{
+
+    width: 10%;
+    height: 15px;
+    text-align: center;
+
+}
+
+#text_number1
+{
+
+    margin-left: 0.6%;
+
+}
