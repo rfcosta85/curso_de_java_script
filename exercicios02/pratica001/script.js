@@ -8,13 +8,20 @@ function contar()
     var contador = inicio
     var transforma = Number(contador.value)
 
+    if(inicio == null)
+    {
+
+        resultado.innerHTML = 'Impossível contar!'
+
+    }
+
     for(inicio; fim; passo)
     {
 
         transforma += passo
 
-        resultado.innerHTML('Contando:')
-        resultado.appendChild(`${transforma} > `)
+        resultado.innerHTML = 'Contando:'
+        resultado.appendChild = `${transforma} > `
 
     }        
 

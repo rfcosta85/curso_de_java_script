@@ -35,6 +35,18 @@ div
 
 }
 
+#resultado
+{
+
+    text-align: center;
+    margin-left: 2%;
+    margin-top: -2%;
+    height: 150px;
+    background-color: rgba(128, 128, 128, 0.164); 
+    width: 25%;
+
+}
+
 footer
 {
 
