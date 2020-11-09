@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+*
+{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body
+{
+
+    background-color: #ee42288a;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+img#logo
+{
+
+    height: 240px;       
+    
+}
+
+header
+{
+
+    width: 50%;
+    height: 80px;
+    margin-left: 1%;
+    margin-top: -3%;
+
+}
+
+h1
+{
+
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-top: 1%;
+
+}
+
+div
+{
+
+    background-color:whitesmoke;
+    width: 50%;
+    height: 350px;
+    margin: auto;
+    margin-top: 5%;
+
+}
+
+p#section
+{
+
+   padding-top: 3%;
+   padding-left: 3%;
+   font-size: 1.3rem;
+
+}
+
+input#box_products
+{
+
+    height: 30px;
+    width: 50%;
+    font-size: 1rem;
+
+}
+
+input#button
+{
+
+    height: 30px;
+    width: 20%;
+    margin-left: 51%;
+    margin-top: 2%;
+    font-size: 1rem;
+}
