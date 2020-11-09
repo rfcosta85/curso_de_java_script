@@ -44,7 +44,7 @@ h1
 
 }
 
-div
+div#registration_area
 {
 
     background-color:whitesmoke;
@@ -81,4 +81,23 @@ input#button
     margin-left: 51%;
     margin-top: 2%;
     font-size: 1rem;
+}
+
+input.button_information
+{
+
+    height: 30px;
+    width: 28%;
+    margin-left: 3%;
+    margin-top: 2%;
+    font-size: 1rem;
+
+}
+
+input:hover
+{
+
+    color: red;
+    font-weight: bolder;
+
 }
