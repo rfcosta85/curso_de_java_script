@@ -94,10 +94,19 @@ input.button_information
 
 }
 
-input:hover
+input#button:hover,input.button_information:hover
 {
 
     color: red;
     font-weight: bolder;
+
+}
+
+select#products_list
+{
+
+    margin-top: 2%;
+    width: 28%;
+    margin-left: 3%;
 
 }
