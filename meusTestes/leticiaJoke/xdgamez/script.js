@@ -1,9 +1,6 @@
-let inserts = document.getElementById('box_products') 
-console.log(inserts)
-let list = document.getElementById('products_list')
-let lista = document.getElementById('products_list2')
-let excluir = document.getElementById('products_list3')
-let bolado = document.getElementById('result')
+let inserts = document.getElementById('box_products')
+let list = document.getElementById('result')
+let ordered_list = document.getElementById('result')
 let products = []
 
 function register()
@@ -11,7 +8,9 @@ function register()
 {
     
     products.push(inserts.value)
-    window.alert(`${inserts.value} adicionado com sucesso`)
+    window.alert(`${inserts.value} adicionado com sucesso`)    
+    inserts.value = '' 
+    inserts.focus() 
     
 
 }
@@ -19,30 +18,46 @@ function register()
 function presentation()
 {
 
-    let itens = document.createElement('option')
-    itens.text = `${inserts.value}`
-    list.appendChild(itens)     
-    inserts.value = '' 
-    //inserts.focus()    
+   list.innerHTML = products 
+   
+    /*for(let i = 0; i <= products.length; i++)
+    {
+
+        list.innerHTML = `${products}`        
+
+    }*/
+
+    /*let itens = document.createElement('option')
+    itens.text = `${products}`
+    list.appendChild(itens)*/
 
 }
 
 function ordered()
 {
 
-    window.alert(`${products.sort()}`)
-    let teste = document.createElement('option')    
+    window.alert(`Ordenando lista...`)    
+    ordered_list.innerHTML = products.sort()
+    /*let teste = document.createElement('option')       
     teste.text = `${products.sort()}`
-    lista.appendChild(teste)    
+    lista.appendChild(teste)*/   
 
 }
 
 function exclude()
 {
 
-   let zoando = document.createElement('option')
-   zoando.text = `${products.sort()}`
-   excluir.appendChild(zoando) 
+    
+   
+    let erase = products.pop()
+    window.alert('Será excluído sempre o último elemento da lista de produtos')   
+    window.alert(`Produto: ${erase} Excluído!`)
+    ordered_list.innerHTML = ''
+   
+
+    /*let zoando = document.createElement('option')
+   zoando.text = `${products.pop()}`
+   excluir.appendChild(zoando)*/
 
 }
 
